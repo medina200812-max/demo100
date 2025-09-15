@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 1450px;
+      }
+      .cofmas {
+        background-color: rgb(69, 43, 16);
+        display: flex;
+        flex-direction: row;
+        padding-left: 605px;
+        padding-right: 605px;
+        font-size: 15px;
+        color: rgb(255, 246, 197);
+        justify-content: space-between;
+        width: 255px;
+        margin-top: -10px;
+      }
+      .container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .img {
+        width: 30px;
+        height: 30px;
+        margin-top: 22px;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(250, 236, 225);
+        width: 700px;
+        height: 360px;
+        border-radius: 10px;
+        line-height: 20px;
+        margin-left: 20px;
+        margin-top: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        flex: 2;
+      }
+      .capfirst {
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        padding-right: 20px;
+        padding-left: 10px;
+        margin-top: -5px;
+      }
+      .capscnd {
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        padding-right: 20px;
+        padding-left: 10px;
+      }
+      .crois {
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        padding-right: 20px;
+        padding-left: 10px;
+      }
+      .textfirst {
+        margin-left: -370px;
+        line-height: 30px;
+      }
+      hr {
+        width: 670px;
+        margin-top: -5px;
+        color: rgb(98, 69, 46);
+      }
+      .textscn {
+        margin-left: -290px;
+        line-height: 30px;
+      }
+      .textth {
+        margin-left: -390px;
+        line-height: 30px;
+      }
+      .formrg {
+        margin-top: -25px;
+      }
+      .items {
+        margin-left: 12px;
+        padding-bottom: 20px;
+        color: rgb(98, 69, 46);
+      }
+      .name {
+        background-color: rgb(250, 236, 225);
+        width: 600px;
+        margin-bottom: 20px;
+        margin-top: 22px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 30px;
+      }
+      .payment {
+        background-color: rgb(250, 236, 225);
+        width: 600px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 30px;
+        padding-bottom: 70px;
+      }
+      .namepaym {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+      }
+      .general {
+        display: flex;
+        flex-direction: row;
+      }
+
+      span {
+        display: flex;
+        flex-direction: column;
+      }
+      .bill {
+        margin-left: 700px;
+        line-height: 40px;
+        line-height: 60px;
+        margin-top: 50px;
+      }
+      button {
+        width: 1400px;
+        height: 35px;
+        margin-left: 30px;
+        border-radius: 15px;
+        background-color: rgb(255, 209, 159);
+        font-size: 15px;
+        margin-top: 30px;
+      }
+      fieldset {
+        border-radius: 24px;
+        color: rgb(98, 69, 46);
+      }
+      input {
+        border: none;
+        width: 400px;
+        background-color: rgb(250, 236, 225);
+        flex-grow: 1;
+        padding: 10px 10px;
+        border: 2px solid rgb(98, 69, 46);
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div container>
+      <div class="cofmas">
+        <img class="img" src="coffee_masters_logo.png" />
+        <h1>Coffee Masters</h1>
+      </div>
+      <div class="general">
+        <div class="menu">
+          <p class="items">ITEMS</p>
+          <div class="formrg">
+            <div class="capfirst">
+              <p>1x</p>
+              <p class="textfirst">
+                <strong>Cappucino</strong><br /><span
+                  style="color: rgb(98, 69, 46)"
+                  >Light Foam</span
+                >
+              </p>
+              <p><strong>$6.00</strong></p>
+            </div>
+            <hr />
+            <div class="capscnd">
+              <p>1x</p>
+              <p class="textscn">
+                <strong>Cappucino</strong> <br /><span
+                  style="color: rgb(98, 69, 46)"
+                  ;
+                  >Almond Milk<br /></span
+                ><span style="color: rgb(98, 69, 46)" ;
+                  >Double Espresso Shot</span
+                >
+              </p>
+              <p><strong>$7.90</strong></p>
+            </div>
+            <hr />
+            <div class="crois">
+              <p>1x</p>
+              <p class="textth">
+                <strong>Croissant</strong><br /><span
+                  style="color: rgb(98, 69, 46)"
+                  >Butter</span
+                >
+              </p>
+              <p><strong>$5.37</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="namepaym">
+          <div class="name">
+            <h2>NAME</h2>
+            <input type="text" placeholder="Name for order" />
+          </div>
+          <div class="payment">
+            <h2>PAYMENT</h2>
+            <input type="text" placeholder="Card number" />
+            <input type="text" placeholder="CCV number" />
+          </div>
+        </div>
+      </div>
+      <div class="bill">
+        <span>Subtotal: $19.27</span>
+        <span>Tax: $0.96</span>
+        <span>Total: $20.23</span>
+      </div>
+      <button>Place order</button>
+    </div>
+  </body>
+</html>
